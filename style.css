@@ -3,9 +3,9 @@ html { box-sizing: border-box; }
 
 body {
 font-family: 'Roboto', sans-serif;
-background-color: darkgray;
+background-color: rgb(190, 190, 190);
 margin:0;
-pading: 20px 60px;
+padding: 20px 60px;
 }
 
 
@@ -20,7 +20,7 @@ grid-template-areas:
     "symbol none menu menu menu menu"
     "none  none content content content content"
     "footer footer footer footer footer footer";
-   
+   padding: 20px 40px;
 }
 
 .header {
@@ -36,6 +36,7 @@ grid-template-areas:
 
 .symbol__images{
 opacity: 60%;
+height: 200px;
 }
 
 .menu__list {
@@ -96,7 +97,7 @@ object-fit: cover;
    background-size: cover;
    background-repeat: no-repeat;
    max-width: 100%;
-   /*margin: 50px 100px 50px 400px;//
+   margin: 50px 100px 50px 400px;
 }
 
 
