@@ -9,48 +9,35 @@ padding: 20px 60px;
 }
 
 
-:root
---mar:30px;
-
 .container {
    /* grid-template-columns: 40% 60%;
     grid-template-rows: 20% 70% 10%;*/
-display: grid;
+/*display: grid;
 grid-template-areas: 
     "symbol none menu menu menu menu"
     "none  none content content content content"
-    "footer footer footer footer footer footer";
-   padding: 20px 40px;
-}
-
-.header {
+    "footer footer footer footer footer footer";*/
     display: flex;
-    justify-content: space-around;
-    gap: var(--mar);
+    flex-direction: column;
+    align-content: center;
+  
 }
 
-.symbol {
-    margin: var(--mar);  
-    grid-template-rows: symbol;
-}
 
-.symbol__images{
+
+.symbol__images--size{
 opacity: 60%;
-height: 200px;
+height: 15em;
 }
 
 .menu__list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4,200px);
-    grid-template-rows: 200px;
+    grid-template-columns: repeat(4,15em);
     column-gap: 30px;
-
 }
 
-.menu__photo {
-max-width: 100%;
-}
+
 .menu__item--1{
 grid-column-start: 1;
 grid-column-end: 2;     
@@ -69,18 +56,17 @@ grid-column-end: 3;
 .menu__item--4{
     grid-column-start: 4;
     grid-column-end: 5;
+ 
 }
 .menu__item--active:hover{
     transform:translate(-50px);
     transform:scale(1.1);
 }
-.menu__photo {
-    display: block;
-    margin: 10px;
-}
+
 
 .menu__photo--small {
-height: 200px;
+height: 15em;
+max-width: 100%;
 border:2px solid gray;
 border-radius: 10px;
 opacity: 90%;
@@ -88,19 +74,23 @@ object-fit: cover;
 }
 
 
-   
-
 .content--style {
-   grid-area: content;
-   height: 600px;
+    height: 100em;
    background-image: url(images/Rokycany.jpg);
    background-size: cover;
-   background-repeat: no-repeat;
-   max-width: 100%;
-   margin: 50px 100px 50px 400px;
+   width: 100%;
+
 }
 
 
 .footer {
     text-align: center;
+}
+
+/********PC**********/
+@media screen and (min-width: 1300px) {
+    .header {
+    display: flex;
+    justify-content: space-between;
+}
 }
