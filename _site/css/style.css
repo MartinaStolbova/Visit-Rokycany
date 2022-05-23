@@ -1,0 +1,79 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+font-family: 'Roboto', sans-serif;
+background-color: rgb(190, 190, 190);
+margin:0;
+padding: 20px 60px;
+}
+
+.symbol__images--size{
+opacity: 60%;
+height: 15em;
+}
+
+.menu__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4,15em);
+    column-gap: 30px;
+}
+
+
+.menu__item--1{
+grid-column-start: 1;
+grid-column-end: 2;     
+}
+
+.menu__item--2{
+grid-column-start: 2;
+grid-column-end: 3;
+}
+
+.menu__item--3{
+    grid-column-start: 3;
+    grid-column-end: 4; 
+}
+
+.menu__item--4{
+    grid-column-start: 4;
+    grid-column-end: 5;
+ 
+}
+.menu__item--active:hover{
+    transform:translate(-50px);
+    transform:scale(1.1);
+}
+
+
+.menu__photo--small {
+height: 15em;
+max-width: 100%;
+border:2px solid gray;
+border-radius: 10px;
+opacity: 90%;
+object-fit: cover;
+}
+
+.content--style {
+    height: 100em;
+    background-image: url(/images/Rokycany.jpg);
+    background-size:content;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+
+.footer {
+    text-align: center;
+}
+
+/********PC**********/
+@media screen and (min-width: 1300px) {
+    .header {
+    display: flex;
+    justify-content: space-between;
+}
+}
