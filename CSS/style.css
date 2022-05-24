@@ -56,18 +56,26 @@ opacity: 90%;
 object-fit: cover;
 }
 
-.content--style {
+/*.content--style {
     height: 100vh;
     background-image: url(/images/Rokycany.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100%;
+    width: 100%;
     margin:30px;
 
+}*/
+
+.Rokycany {
+width: 100%;
+margin: 30px;
+height: 100vh;
 }
+
 
 .footer {
     text-align: center;
+    background-color: rgb(182, 176, 176);
 }
 
 /********PC**********/
@@ -76,5 +84,7 @@ object-fit: cover;
     display: flex;
     justify-content: space-between;
 }
-
+.content--style{
+    max-width: 100%;
+}
 }
