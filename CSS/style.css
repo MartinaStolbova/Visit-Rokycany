@@ -1,13 +1,18 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
-
+html {
+    box-sizing: border-box;
+  }
+  
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+  
 body {
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
 background-color: rgb(190, 190, 190);
-margin:0;
-padding:20px;
+/*margin:0;
+padding:20px;*/
+
 }
 
 h1{
@@ -25,17 +30,18 @@ font-size: 25px;
     flex-direction: column;
 }
 
-.symbol__images--size{
+.symbol__images--size {
 opacity: 60%;
 height: 15em;
+margin:20px;
+border: 1px, solid, gray;
 }
 
 .menu__list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(4,15em);
-    column-gap: 30px;
-
+    grid-template-columns: repeat(4,10em);
+    column-gap: 20px;
 }
 
 
@@ -83,14 +89,15 @@ width: 100%
 .footer {
     text-align: center;
     background-color: rgb(182, 176, 176);
-    width: 100%;
+   
 }
 
 /********PC**********/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  
 }
 .Rokycany--site {
 object-fit: cover;
