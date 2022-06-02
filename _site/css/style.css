@@ -44,8 +44,7 @@ max-width: 100%;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: auto;
-    column-gap: 15%;
+    column-gap: 5%;
     margin:5%;
     padding: 0;
 
@@ -76,7 +75,7 @@ grid-column: 2 / 3;
 
 
 .menu__photo--small {
-height: 15em;
+height: 5em;
 width: 100%;
 border:2px solid gray;
 border-radius: 10px;
@@ -97,6 +96,9 @@ width: 100%;
     margin:0 auto;
 
 }
+p {
+    margin: 5px,
+}
 .footer {
     text-align: center;
     background-color: rgb(182, 176, 176); 
@@ -111,23 +113,15 @@ width: 100%;
 display: flex;
 justify-content: space-around;
 }
-/*.menu__list {
-display: flex;
-justify-content: space-around;
-column-gap: 1em;
-}*/
 
-/*.menu__item--1,.menu__item--2,.menu__item--3,.menu__item--4{
-    flex: 0  0 calc(100%/4 - 2em);
-}*/
+.menu__photo--small{
+height: 10em;
+}
+
 .Rokycany--size{
     max-width: 100%;
 }
 }
-
-
-
-/**********1000px***********/
 
 
 
@@ -136,8 +130,5 @@ column-gap: 1em;
 .header {
     justify-content: space-around;
 }
-.symbol__images--size {
-    margin:0px;
     }
 
-}
