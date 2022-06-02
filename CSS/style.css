@@ -93,12 +93,12 @@ width: 100%;
 }
 
 .main--style {
-    margin:0 auto;
+    margin:15px;
+    padding: 10px;
+    background-color: lightgray;
 
 }
-p {
-    margin: 5px,
-}
+
 .footer {
     text-align: center;
     background-color: rgb(182, 176, 176); 
@@ -115,7 +115,7 @@ justify-content: space-around;
 }
 
 .menu__photo--small{
-height: 10em;
+height: 12em;
 }
 
 .Rokycany--size{
